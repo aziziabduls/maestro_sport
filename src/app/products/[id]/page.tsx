@@ -6,6 +6,13 @@ import Navbar from "../../components/Navbar";
 import productsData from "../../data/products.json";
 import ProductDetailClient from "./ProductDetailClient";
 
+// Generate static params for all products
+export async function generateStaticParams() {
+  return productsData.map((product) => ({
+    id: product.id.toString(),
+  }));
+}
+
 export default async function ProductDetailPage({
   params,
 }: {
