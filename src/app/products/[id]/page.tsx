@@ -1,58 +1,25 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
-import { useCartStore } from "@/lib/store";
-import { useToast } from "@/lib/use-toast";
-import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import productsData from "../../data/products.json";
+import ProductDetailClient from "./ProductDetailClient";
 
-export default function ProductDetailPage({
+export default async function ProductDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const { toast } = useToast();
-  const addItem = useCartStore((state) => state.addItem);
-  const [selectedSize, setSelectedSize] = useState("");
-
-  // Mengambil data produk berdasarkan ID
-  // Gunakan React.use() untuk unwrap params
-  const unwrappedParams = React.use(params);
-  const productId = parseInt(unwrappedParams.id);
+  // Await params karena sekarang Promise di Next.js 15
+  const { id } = await params;
+  const productId = parseInt(id);
   const product = productsData.find((p) => p.id === productId);
 
   // Jika produk tidak ditemukan, tampilkan halaman 404
   if (!product) {
     notFound();
   }
-
-  const handleAddToCart = () => {
-    if (!selectedSize) {
-      toast({
-        description: "Silakan pilih ukuran terlebih dahulu.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    addItem({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: product.image,
-      size: selectedSize,
-    });
-
-    toast({
-      description: `${product.name} telah ditambahkan ke keranjang.`,
-    });
-  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -115,47 +82,7 @@ export default function ProductDetailPage({
                 </ul>
               </div>
 
-              <div className="mb-6">
-                <h2 className="text-lg font-medium mb-2">Ukuran</h2>
-                <div className="flex flex-wrap gap-2">
-                  {product.sizes.map((size) => (
-                    <Button
-                      key={size}
-                      variant={selectedSize === size ? "default" : "outline"}
-                      onClick={() => setSelectedSize(size)}
-                      className={selectedSize === size ? "bg-blue-600" : ""}
-                    >
-                      {size}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <p className="text-sm text-gray-600">
-                  Stok: <span className="font-medium">{product.stock}</span>{" "}
-                  tersedia
-                </p>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <Button
-                  onClick={handleAddToCart}
-                  className="flex-1 gap-2 bg-blue-600 hover:bg-blue-700"
-                >
-                  <ShoppingCart className="h-5 w-5" />
-                  Tambahkan ke Keranjang
-                </Button>
-                <Button
-                  asChild
-                  variant="secondary"
-                  className="flex-1 bg-gray-800 hover:bg-gray-900 text-white"
-                >
-                  <Link href={`/checkout?product=${productId}`}>
-                    Beli Sekarang
-                  </Link>
-                </Button>
-              </div>
+              <ProductDetailClient product={product} />
             </div>
           </div>
         </div>
