@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Dobok Adidas Adi Champion II",
+    "price": 1250000,
+    "image": "/images/products/product-dobok.jpg",
+    "category": "uniform",
+    "description": "Dobok taekwondo Adidas Adi Champion II dengan bahan polyester berkualitas tinggi. Nyaman digunakan dan tahan lama. Cocok untuk latihan maupun pertandingan.",
+    "features": [
+      "Bahan polyester berkualitas tinggi",
+      "Desain ergonomis untuk kenyamanan maksimal",
+      "Logo Adidas terintegrasi",
+      "Kerah hitam (untuk pemegang sabuk hitam)",
+      "Cocok untuk latihan dan pertandingan"
+    ],
+    "sizes": ["160cm", "170cm", "180cm", "190cm"],
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "name": "Sabuk Taekwondo Adidas",
+    "price": 150000,
+    "image": "/images/products/product-belt.jpg",
+    "category": "belt",
+    "description": "Sabuk taekwondo Adidas berkualitas tinggi, tahan lama dan tidak mudah pudar. Tersedia dalam berbagai tingkatan warna.",
+    "features": [
+      "Bahan katun berkualitas tinggi",
+      "Warna tidak mudah pudar",
+      "Lebar 4cm",
+      "Dengan logo Adidas terintegrasi",
+      "Sesuai standar pertandingan WTF"
+    ],
+    "sizes": ["240cm", "260cm", "280cm", "300cm"],
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "name": "Body Protector Daedo",
+    "price": 850000,
+    "image": "/images/products/product-protector.jpg",
+    "category": "protector",
+    "description": "Body protector Daedo dirancang untuk memberikan perlindungan maksimal saat latihan maupun pertandingan taekwondo. Ringan dan nyaman digunakan.",
+    "features": [
+      "Bahan vinyl berkualitas tinggi",
+      "Desain ergonomis",
+      "Tersedia dalam warna merah dan biru",
+      "Padding dengan kepadatan optimal",
+      "Sesuai standar WTF"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 8
+  },
+  {
+    "id": 4,
+    "name": "Target Pad",
+    "price": 350000,
+    "image": "/images/products/product-pad.jpg",
+    "category": "training",
+    "description": "Target pad untuk latihan tendangan dan pukulan. Terbuat dari bahan berkualitas tinggi dengan genggaman yang nyaman.",
+    "features": [
+      "Bahan kulit sintetis berkualitas tinggi",
+      "Padding tebal untuk penyerapan benturan",
+      "Desain ergonomis untuk genggaman yang nyaman",
+      "Tahan lama",
+      "Ukuran standar internasional"
+    ],
+    "sizes": ["Standar"],
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "name": "Dobok Nike Strike",
+    "price": 950000,
+    "image": "/images/products/product-dobok2.jpg",
+    "category": "uniform",
+    "description": "Dobok Nike Strike dirancang dengan teknologi DRI-FIT untuk menjaga kenyamanan selama latihan dan pertandingan. Bahan ringan dan tahan lama.",
+    "features": [
+      "Teknologi DRI-FIT untuk menyerap keringat",
+      "Bahan ringan dan nyaman",
+      "Desain modern dengan potongan ergonomis",
+      "Logo Nike terintegrasi",
+      "Kerah putih (untuk semua tingkatan sabuk)"
+    ],
+    "sizes": ["160cm", "170cm", "180cm", "190cm"],
+    "stock": 12
+  },
+  {
+    "id": 6,
+    "name": "Foot Protector Adidas",
+    "price": 450000,
+    "image": "/images/products/product-foot.jpg",
+    "category": "protector",
+    "description": "Foot protector Adidas memberikan perlindungan optimal untuk kaki selama pertandingan taekwondo. Desain ergonomis memberikan mobilitas maksimal.",
+    "features": [
+      "Bahan vinyl berkualitas tinggi",
+      "Padding dengan kepadatan optimal",
+      "Desain ergonomis tidak membatasi pergerakan",
+      "Tersedia dalam warna merah dan biru",
+      "Sesuai standar WTF"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 20
+  },
+  {
+    "id": 7,
+    "name": "Sabuk Taekwondo Nike",
+    "price": 130000,
+    "image": "/images/products/product-belt2.jpg",
+    "category": "belt",
+    "description": "Sabuk taekwondo Nike dengan kualitas terbaik. Terbuat dari bahan premium yang tidak mudah pudar dan tahan lama.",
+    "features": [
+      "Bahan katun premium",
+      "Warna tahan lama",
+      "Embos logo Nike",
+      "Lebar 4cm",
+      "Tersedia dalam semua tingkatan warna"
+    ],
+    "sizes": ["240cm", "260cm", "280cm", "300cm"],
+    "stock": 30
+  },
+  {
+    "id": 8,
+    "name": "Hand Mitt Adidas",
+    "price": 380000,
+    "image": "/images/products/product-hand.jpg",
+    "category": "protector",
+    "description": "Hand mitt Adidas dirancang untuk memberikan perlindungan maksimal pada tangan saat pertandingan taekwondo.",
+    "features": [
+      "Bahan vinyl berkualitas tinggi",
+      "Padding optimal untuk perlindungan maksimal",
+      "Desain ergonomis untuk mobilitas tangan",
+      "Tersedia dalam warna merah dan biru",
+      "Sesuai standar WTF"
+    ],
+    "sizes": ["S", "M", "L"],
+    "stock": 18
+  },
+  {
+    "id": 9,
+    "name": "Taekwondo Shield",
+    "price": 580000,
+    "image": "/images/products/product-shield.jpg",
+    "category": "training",
+    "description": "Taekwondo shield untuk latihan tendangan dan pukulan. Terbuat dari bahan berkualitas tinggi dengan padding tebal untuk penyerapan benturan.",
+    "features": [
+      "Bahan kulit sintetis berkualitas tinggi",
+      "Padding tebal untuk penyerapan benturan maksimal",
+      "Pegangan kuat untuk stabilitas",
+      "Ukuran besar untuk target yang lebih luas",
+      "Tahan lama untuk penggunaan intensif"
+    ],
+    "sizes": ["Standar"],
+    "stock": 10
+  },
+  {
+    "id": 10,
+    "name": "Taekwondo Focus Pad",
+    "price": 320000,
+    "image": "/images/products/product-focus.jpg",
+    "category": "training",
+    "description": "Focus pad untuk latihan presisi tendangan dan pukulan. Ukuran kecil untuk melatih akurasi serangan.",
+    "features": [
+      "Bahan kulit sintetis berkualitas tinggi",
+      "Padding optimal untuk penyerapan benturan",
+      "Ukuran kecil untuk latihan presisi",
+      "Genggaman ergonomis",
+      "Ringan dan mudah digunakan"
+    ],
+    "sizes": ["Standar"],
+    "stock": 14
+  },
+  {
+    "id": 11,
+    "name": "Premium Dan Black Belt",
+    "price": 230000,
+    "image": "/images/products/product-dan.jpg",
+    "category": "belt",
+    "description": "Sabuk hitam premium untuk pemegang Dan. Terbuat dari bahan terbaik dengan embroidery nomor dan nama.",
+    "features": [
+      "Bahan satin premium",
+      "Embroidery nomor dan nama",
+      "Lebar 5cm",
+      "Bordir kualitas tinggi",
+      "Prestige look"
+    ],
+    "sizes": ["260cm", "280cm", "300cm", "320cm"],
+    "stock": 8
+  },
+  {
+    "id": 12,
+    "name": "Dobok Anak-anak",
+    "price": 420000,
+    "image": "/images/products/product-kids.jpg",
+    "category": "uniform",
+    "description": "Dobok taekwondo khusus untuk anak-anak. Nyaman, ringan, dan tahan lama. Cocok untuk latihan maupun pertandingan tingkat anak.",
+    "features": [
+      "Bahan polyester ringan",
+      "Desain khusus untuk anak-anak",
+      "Kerah putih (untuk semua tingkatan sabuk)",
+      "Mudah dicuci dan cepat kering",
+      "Tersedia dalam berbagai ukuran untuk anak"
+    ],
+    "sizes": ["110cm", "120cm", "130cm", "140cm", "150cm"],
+    "stock": 22
+  }
+]
